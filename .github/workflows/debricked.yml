@@ -15,6 +15,7 @@ jobs:
         
       - name: Fingerprint files
         run: |
+          date > nuget/dvcsharp-api-master/unique_file
           debricked fingerprint
           
       - name: Run Scan
