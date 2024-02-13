@@ -15,7 +15,7 @@ jobs:
         
       - name: Fingerprint files
         run: |
-          dotnet restore / --packages nuget/dvcsharp-api-master/packages
+          dotnet restore --packages nuget/dvcsharp-api-master/packages
           debricked fingerprint
           
       - name: Run Scan
