@@ -24,4 +24,10 @@ jobs:
         env:
           DEBRICKED_TOKEN: ${{ secrets.DEBRICKED_TOKEN }}
 
+      - name: Run Scan review
+        run: |
+          debricked scan --no-fingerprint
+        env:
+          DEBRICKED_TOKEN: ${{ secrets.DEBRICKED_TOKEN_REVIEW }}
+          DEBRICKED_URI: 'https://review-0-prevent-jw9h9c.review.debricked.dev'
 
