@@ -25,6 +25,7 @@ jobs:
           DEBRICKED_TOKEN: ${{ secrets.DEBRICKED_TOKEN }}
 
       - name: Run Scan review
+        if: success() || failure()
         run: |
           debricked scan --no-fingerprint
         env:
