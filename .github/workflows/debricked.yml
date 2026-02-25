@@ -29,6 +29,5 @@ jobs:
         run: |
           debricked scan --no-fingerprint
         env:
-          DEBRICKED_TOKEN: ${{ secrets.DEBRICKED_TOKEN_REVIEW }}
-          DEBRICKED_URI: 'https://review-6897-clear-fp061h.review.debricked.dev'
-
+          DEBRICKED_TOKEN: ${{ secrets.DEBRICKED_TOKEN_STAGING }}
+          DEBRICKED_URI: 'https://review-7817-revie-fhyo2b.review.debricked.dev'
